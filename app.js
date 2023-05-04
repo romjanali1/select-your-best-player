@@ -81,4 +81,6 @@ document.getElementById('calculater-btn').addEventListener('click', function(){
 
     const tottelPlayerCoest = tottelPlayerAmount + numbers * inputAmount;
     playerAmount.innerText = tottelPlayerCoest;
+
+    inputValue.value = '';
 })
