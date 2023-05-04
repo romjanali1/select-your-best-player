@@ -105,7 +105,17 @@ document.getElementById('calcut-tottel-amount').addEventListener('click', functi
     const managerPay = gatInputValueById('manager-pay')
     const coachPay = gatInputValueById('coach-pay')
 
-    const managerCoachPay = coachPay + managerPay;
+    const playerAmount = document.getElementById('player-amount');
+    const playerAmountString = playerAmount.innerText;
+    const tottelPlayerAmount = parseFloat(playerAmountString);
+
+    const tottelPay = document.getElementById('tottel-Pay');
+    const tottelPayString = tottelPay.innerText;
+    const Amount = parseFloat(tottelPayString);
+
+
+    const managerCoachPay = Amount + tottelPlayerAmount + coachPay + managerPay;
+    tottelPay.innerText = managerCoachPay;
 
 
 })
