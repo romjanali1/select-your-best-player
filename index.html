@@ -27,78 +27,81 @@
         </section>
     </header>
 
+    <!-- player-section -->
+
     <main class="flex bg-slate-900 py-10 text-white">
-        <section class="grid grid-cols-3 gap-2">
+        <section class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f2.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-1">Lionel Messi</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-1" class="bg-emerald-600 text-white my-2 py-2 px-20">SELECT</button>
                </div>
             </div>
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f3.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-2">Cristiano Ronaldo</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-2" class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
                </div>
             </div>
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f4.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-3">Andres Iniesta</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-3" class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
                </div>
             </div>
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f5.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-4">Zlatan Ibrahimovic</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-4" class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
                </div>
             </div>
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f6.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-5">Radamel Falcao</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-5" class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
                </div>
             </div>
             <div class="border-2 border-white flex flex-col justify-center items-center">
                 <img src="image/f7.jpg" alt="">
                <div>
-                <h1>player name</h1>
+                <h1 id="name-6">Robin van Persie</h1>
                 <div class="flex">
                     <h4> 40 Goals </h4>
                     <h4> : 100 Match </h4>
                 </div>
-                <button class="bg-emerald-600 text-white py-2 px-20">SELECT</button>
+                <button id="player-6" class="bg-emerald-600 text-white my-2 py-2 px-20">SELECT</button>
                </div>
             </div>
         </section>
 
         <section class="mx-8">
             <h1 class="text-6xl my-5">Selected-V</h1>
+            <ol id="player-add"></ol>
 
             <div>
                 <h1 class="text-6xl my-5">Budget</h1>
@@ -123,5 +126,6 @@
         </section>
     </main>
     
+    <script src="app.js"></script>
 </body>
 </html>
