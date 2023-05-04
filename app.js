@@ -66,3 +66,19 @@ document.getElementById('player-6').addEventListener('click', function(){
     playerAdd.appendChild(li);
 
 })
+
+document.getElementById('calculater-btn').addEventListener('click', function(){
+    const inputValue = document.getElementById('input-Value');
+    const inputValueString = inputValue.value;
+    const inputAmount = parseFloat(inputValueString);
+    
+    const playerNumbers = document.getElementById('player-add')
+    const numbers =  playerNumbers.childNodes.length;
+
+    const playerAmount = document.getElementById('player-amount');
+    const playerAmountString = playerAmount.innerText;
+    const tottelPlayerAmount = parseFloat(playerAmountString);
+
+    const tottelPlayerCoest = tottelPlayerAmount + numbers * inputAmount;
+    playerAmount.innerText = tottelPlayerCoest;
+})
