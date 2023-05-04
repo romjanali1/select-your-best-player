@@ -5,6 +5,24 @@ function gateValueById (inputId){
 
 }
 
+function gatInputValueById(inputId){
+    const inputValue = document.getElementById(inputId);
+    const inputValueString = inputValue.value;
+    const inputAmount = parseFloat(inputValueString);
+
+    inputValue.value = '';
+    return inputAmount;
+}
+
+function gatinertextById(textId){
+    const playerAmount = document.getElementById(textId);
+    const playerAmountString = playerAmount.innerText;
+    const tottelPlayerAmount = parseFloat(playerAmountString);
+
+    return tottelPlayerAmount;
+
+}
+
 document.getElementById('player-1').addEventListener('click', function(){
     const player1 = gateValueById('name-1')
 
@@ -68,9 +86,8 @@ document.getElementById('player-6').addEventListener('click', function(){
 })
 
 document.getElementById('calculater-btn').addEventListener('click', function(){
-    const inputValue = document.getElementById('input-Value');
-    const inputValueString = inputValue.value;
-    const inputAmount = parseFloat(inputValueString);
+    const inputValu = gatInputValueById('input-Value')
+    
     
     const playerNumbers = document.getElementById('player-add')
     const numbers =  playerNumbers.childNodes.length;
@@ -79,8 +96,16 @@ document.getElementById('calculater-btn').addEventListener('click', function(){
     const playerAmountString = playerAmount.innerText;
     const tottelPlayerAmount = parseFloat(playerAmountString);
 
-    const tottelPlayerCoest = tottelPlayerAmount + numbers * inputAmount;
+    const tottelPlayerCoest = tottelPlayerAmount + numbers * inputValu;
     playerAmount.innerText = tottelPlayerCoest;
 
-    inputValue.value = '';
+})
+
+document.getElementById('calcut-tottel-amount').addEventListener('click', function(){
+    const managerPay = gatInputValueById('manager-pay')
+    const coachPay = gatInputValueById('coach-pay')
+
+    const managerCoachPay = coachPay + managerPay;
+
+
 })
